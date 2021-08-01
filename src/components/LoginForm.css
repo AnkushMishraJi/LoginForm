@@ -1,0 +1,52 @@
+.login-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:12px;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+    background-color: rgb(238, 243, 229);
+  }
+  
+  
+  .login-text{
+    padding-top: 10px;
+  
+  }
+
+  #login-btn{
+      width:95%;
+      margin-top: 10px;
+      background-color: rgb(20, 17, 17);
+      color:blanchedalmond;
+      border:none;
+      outline:none;
+      height: 40px;
+  }
+  
+  .fb-text span{
+    padding-top:100px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .error{
+      color:red;
+  }
+
+  label{
+    font-weight: 600;
+  }
+
+  input{
+    border:none;
+    
+  }
+
+  FBlogin{
+    width: 100%;
+  }

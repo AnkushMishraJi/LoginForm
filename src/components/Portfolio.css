@@ -1,0 +1,15 @@
+.dp-img{
+    width:25%;
+    height:15%;
+}
+.text-container{
+    display:flex;
+    
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+
+
