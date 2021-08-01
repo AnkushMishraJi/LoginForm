@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { Card, Image } from 'react-bootstrap';
 import './FBLogin.css';
-import App from '/home/ankush/Desktop/myapp/src/App.js';
+import App from '/home/ankush/git_workspace/myapp/src/App.js';
 import LoginForm from './LoginForm';
 
 function FBLogin() {
