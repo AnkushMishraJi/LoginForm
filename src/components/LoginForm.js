@@ -16,21 +16,21 @@ function LoginForm({Login, error}){
 
       return(
       <Form onSubmit={submitHandler} className="login-form">
-      <h1 className="text-center">Welcome!!!</h1>
+      <h1 className="text-center">TENCO</h1>
       {(error != "") ? (<div className="error">{error}</div>) : "" }
       <FormGroup>
           <Label>Name</Label>
-          <input type="name" placeholder="Name" onChange={e => setDetails({...details, name: e.target.value})} value={details.name}/>
+          <input type="name" placeholder="Name" onChange={e => setDetails({...details, name: e.target.value})} value={details.name} required/>
       </FormGroup>
       <FormGroup>
           <Label>Email</Label>
-          <input type="email" placeholder="Email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email}/>
+          <input type="email" placeholder="Email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email} required/>
       </FormGroup>
       <FormGroup>
           <Label>Password</Label>
-          <input type="password" placeholder="Password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
+          <input type="password" placeholder="Password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} required/>
       </FormGroup>
-      <input type="submit" id="login-btn" value="Log in" />
+      <button type="submit" id="login-btn">Log In</button>
       <div className="text-center login-text">
           Or continue with your social account 
       </div>

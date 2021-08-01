@@ -50,3 +50,19 @@
   FBlogin{
     width: 100%;
   }
+
+  #login-btn:hover{
+    color:black;
+    background-image:linear-gradient(to left, violet, indigo, blue);
+    transition: 0.6s;
+  }
+
+    input{
+      border:2px solid;
+      border-color: black;
+    }
+    input:hover{
+      border:2px solid;
+      border-color: rgb(5, 117, 151);
+    }
+    
