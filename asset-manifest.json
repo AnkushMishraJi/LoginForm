@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LoginForm/static/css/main.e875c938.chunk.css",
+    "main.css": "/LoginForm/static/css/main.348fff40.chunk.css",
     "main.js": "/LoginForm/static/js/main.44ee7854.chunk.js",
     "main.js.map": "/LoginForm/static/js/main.44ee7854.chunk.js.map",
     "runtime-main.js": "/LoginForm/static/js/runtime-main.1ca086ec.js",
@@ -12,7 +12,7 @@
     "static/js/3.1b4c3bf3.chunk.js.map": "/LoginForm/static/js/3.1b4c3bf3.chunk.js.map",
     "index.html": "/LoginForm/index.html",
     "static/css/2.455652b6.chunk.css.map": "/LoginForm/static/css/2.455652b6.chunk.css.map",
-    "static/css/main.e875c938.chunk.css.map": "/LoginForm/static/css/main.e875c938.chunk.css.map",
+    "static/css/main.348fff40.chunk.css.map": "/LoginForm/static/css/main.348fff40.chunk.css.map",
     "static/js/2.b6191674.chunk.js.LICENSE.txt": "/LoginForm/static/js/2.b6191674.chunk.js.LICENSE.txt",
     "static/media/DP.7c725057.jpg": "/LoginForm/static/media/DP.7c725057.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.1ca086ec.js",
     "static/css/2.455652b6.chunk.css",
     "static/js/2.b6191674.chunk.js",
-    "static/css/main.e875c938.chunk.css",
+    "static/css/main.348fff40.chunk.css",
     "static/js/main.44ee7854.chunk.js"
   ]
 }
