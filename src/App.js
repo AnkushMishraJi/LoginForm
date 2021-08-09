@@ -2,7 +2,6 @@ import './App.css';
 import React,{useState} from 'react';
 import LoginForm from './components/LoginForm';
 import Portfolio from './components/Portfolio';
-import FBLogin from './components/FBLogin';
 
 function App() {
     const adminUser={
@@ -14,8 +13,9 @@ function App() {
     
     const Login=(details) => {
         console.log(details);
-        if((details.email == adminUser.email && details.password == adminUser.password)){
+        if((details.email === adminUser.email && details.password === adminUser.password) || login){
             console.log("Logged in");
+            console.log(login);
             
             setUser({
                 name: details.name,
@@ -37,9 +37,25 @@ function App() {
         })
         setError("");
     }
+
+    const [login, setLogin] = useState(false);
+    const [data, setData] = useState({});
+    const [picture, setPicture] = useState('');
+  
+    const responseFacebook = (response) => {
+      console.log(response);
+      setData(response);
+      setPicture(response.picture.data.url);
+      if (response.accessToken) {
+        setLogin(true);
+      } else {
+        setLogin(false);
+      }
+      console.log(login);
+    }
     return(
         <div className="App"> 
-        {(user.email != "") ? (
+        {(user.email !== "") ? (
             <div className="welcome">
             <div id="main-bar">
             <div id="welcome">
@@ -50,7 +66,7 @@ function App() {
             <Portfolio />
             </div>   
         ): (
-            <LoginForm Login={Login} error={error}/>
+            <LoginForm Login={Login} error={error} login={login} data={data} picture={picture} responseFacebook={responseFacebook}/>
         )     
         }
         </div>
